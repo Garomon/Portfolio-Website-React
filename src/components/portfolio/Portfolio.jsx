@@ -11,7 +11,7 @@ import IMG8 from '../../assets/IMG8.jpg'
 import IMG9 from '../../assets/IMG9.jpg'
 import IMG10 from '../../assets/IMG10.jpg'
 import IMG11 from '../../assets/IMG11.jpg'
-
+import IMG12 from '../../assets/IMG12.jpg'
 
 const data = [
 {
@@ -26,35 +26,35 @@ const data = [
   id: 1,
   image: IMG1,
   title: 'Pomodoro Clock 25+5',
-  type: 'Project',
+  type: 'JS Project',
   github: 'https://github.com/Garomon/pomodoro-clock-react'
 },
 {
   id: 2,
   image: IMG2,
   title: 'Drum Machine',
-  type: 'Project',
+  type: 'JS Project',
   github: 'https://github.com/Garomon/drum-machine-react'
 },
 {
   id: 3,
   image: IMG3,
   title: 'Javascript Calculator',
-  type: 'Project',
+  type: 'JS Project',
   github: 'https://github.com/Garomon/Javascript-calculator-React'
 },
 {
   id: 4,
   image: IMG4,
   title: 'Random Quote Machine',
-  type: 'Project',
+  type: 'JS Project',
   github: 'https://github.com/Garomon/repo-random-quote-machine-react'
 },
 {
   id: 5,
   image: IMG5,
   title: 'Markdown Previewer',
-  type: 'Project',
+  type: 'JS Project',
   github: 'https://github.com/Garomon/markdown-previewer-react'
 },
 {
@@ -91,6 +91,13 @@ const data = [
   title: '"Chanfle" Opening Video',
   type: 'Audiovisual Product',
   watch: 'https://drive.google.com/file/d/1lEa8KFupLbYFq7akfoHI1vGaLT8HeeU-/view?usp=sharing'
+},
+{
+  id: 12,
+  image: IMG12,
+  title: 'Un Cómic de mi Vida',
+  type: 'Digital Animation',
+  watch: 'https://drive.google.com/file/d/1oY5N-4AzEQRpkjwgLkpvYJ6MVUxjng4f/view?usp=sharing'
 }
 ];
 
@@ -116,7 +123,6 @@ const Portfolio = () => {
                   {github ? <a href={github} target={'_blank'} className="btn">Github</a> : ''}
                   {watch ? <a href={watch} target={'_blank'} className="btn">Watch</a> : ''}
                   {demo ? <a href={demo} target={'_blank'} className="btn btn-primary">Live Demo</a> : ''}
-                  
                 </div>
               </article>
             )

@@ -1,9 +1,9 @@
 import React from 'react'
 import './testimonials.css'
-import IMG1 from '../../assets/IMG1.jpg'
-import IMG2 from '../../assets/IMG2.png'
-import IMG3 from '../../assets/IMG3.png'
-import IMG4 from '../../assets/IMG4.png'
+import apple from '../../assets/apple.png'
+import FordC from '../../assets/FordC.jpg'
+import DanOne from '../../assets/DanOne.jpg'
+import YO3 from '../../assets/YO3.jpg'
 import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -13,24 +13,26 @@ import 'swiper/css/pagination';
 
 const data = [
   {
-    avatar: IMG1,
-    name: 'Tina Snow',
-    review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus harum eligendi nam cupiditate corrupti rerum magni, dignissimos obcaecati voluptatum ut accusantium illum. Distinctio dolores sunt pariatur quibusdam labore voluptatibus fugit magnam rem vitae dolor, quos debitis exercitationem quasi cumque!'
+    avatar: apple,
+    name: 'Apple',
+    review: 'Operation Specialist at Mexico’s first Apple Store, managing inventories and logistics issues, in addition to providing customer service | SAP Software',
+    cta: 'https://drive.google.com/drive/folders/1znfwtWmKknHnz7oxZhzU6udKPiTRxDY8?usp=sharing'
   },
   {
-    avatar: IMG2,
-    name: 'Shatta Wale',
-    review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus harum eligendi nam cupiditate corrupti rerum magni, dignissimos obcaecati voluptatum ut accusantium illum. Distinctio dolores sunt pariatur quibusdam labore voluptatibus fugit magnam rem vitae dolor, quos debitis exercitationem quasi cumque!'
+    avatar: FordC,
+    name: 'Ford Credit',
+    review: 'Learning & Development Analyst | Internal and regional communication.'
   },
   {
-    avatar: IMG3,
-    name: 'Kwame Despite',
-    review:  'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus harum eligendi nam cupiditate corrupti rerum magni, dignissimos obcaecati voluptatum ut accusantium illum. Distinctio dolores sunt pariatur quibusdam labore voluptatibus fugit magnam rem vitae dolor, quos debitis exercitationem quasi cumque!'
+    avatar: DanOne,
+    name: 'Danone/Bonafont',
+    review:  'Audiovisual Designer | Content creation, video edition and graphic material | Management of Creative Area'
   },
   {
-    avatar: IMG4,
-    name: 'Nama amamamamaxd',
-    review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus harum eligendi nam cupiditate corrupti rerum magni, dignissimos obcaecati voluptatum ut accusantium illum. Distinctio dolores sunt pariatur quibusdam labore voluptatibus fugit magnam rem vitae dolor, quos debitis exercitationem quasi cumque!'
+    avatar: YO3,
+    name: 'Personal and Freelance Projects',
+    review: 'Experience creating diverse digital content from illustrations, VFX, video edition, apps etc... from diverse clients',
+    cta: ''
   }
 ]
 
@@ -39,8 +41,8 @@ const data = [
 const Testimonials = () => {
   return (
     <section id='testimonials'>
-      <h5>Review from clients</h5>
-      <h2>Testimonials</h2>
+      <h5>Companies</h5>
+      <h2>Work Experience</h2>
       
 
       <Swiper className="container testimonials__container"
@@ -49,7 +51,7 @@ const Testimonials = () => {
       slidesPerView={1}
       pagination={{ clickable: true }}>
         {
-          data.map(({avatar, name, review}, index) =>{
+          data.map(({avatar, name, review, cta}, index) =>{
             return (
             
               <SwiperSlide key={index} className="testimonial">
@@ -60,6 +62,7 @@ const Testimonials = () => {
                 <small className='client__review'>
                    {review} 
                 </small>
+                {cta ? <a href={cta} target={'_blank'} className="btn btn-primary">Media</a> : ''}
               </SwiperSlide>
             
             )
