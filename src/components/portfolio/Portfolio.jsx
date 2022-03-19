@@ -14,6 +14,7 @@ import IMG11 from '../../assets/IMG11.jpg'
 import IMG12 from '../../assets/IMG12.jpg'
 import corazon from '../../assets/corazon.png' //13
 import weatherbg from '../../assets/weatherbg.png' //14
+import CS from '../../assets/CS.png' //15
 
 const data = [
 {
@@ -114,6 +115,12 @@ const data = [
   title: 'Un Cómic de mi Vida',
   type: 'Digital Animation',
   watch: 'https://drive.google.com/file/d/1oY5N-4AzEQRpkjwgLkpvYJ6MVUxjng4f/view?usp=sharing'
+},
+{
+  id: 15,
+  image: CS,
+  title: 'Developing...',
+  type: 'Coming Soon'
 }
 ];
 
