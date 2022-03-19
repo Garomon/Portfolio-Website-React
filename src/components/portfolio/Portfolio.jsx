@@ -12,6 +12,8 @@ import IMG9 from '../../assets/IMG9.jpg'
 import IMG10 from '../../assets/IMG10.jpg'
 import IMG11 from '../../assets/IMG11.jpg'
 import IMG12 from '../../assets/IMG12.jpg'
+import corazon from '../../assets/corazon.png' //13
+import weatherbg from '../../assets/weatherbg.png' //14
 
 const data = [
 {
@@ -21,6 +23,20 @@ const data = [
   type: 'Web Page',
   github: 'https://github.com/Garomon/Portfolio-Website-React',
   demo: 'https://garomontoya.com'
+},
+{
+  id: 14,
+  image: weatherbg,
+  title: 'Weather App',
+  type: 'React App',
+  github: 'https://github.com/Garomon/weather-app-react'
+},
+{
+  id: 13,
+  image: corazon,
+  title: 'Tranquila Corazón',
+  type: 'Web Page Adm',
+  demo: 'https://tranquilacorazon.com/'
 },
 {
   id: 1,
