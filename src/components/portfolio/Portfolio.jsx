@@ -120,7 +120,7 @@ const data = [
   id: 15,
   image: CS,
   title: 'Developing...',
-  type: 'Coming Soon'
+  type: 'More Coming Soon'
 }
 ];
 
